@@ -10,8 +10,8 @@ public class SunnyController {
     @Autowired
     private SunnyService sunnyService;
 
-    @GetMapping("/hello")
-    public String hello() {
+    @GetMapping("/sunny/hello")
+    public String helloSunny() {
         return "hello " + sunnyService.getName();
     }
 }
